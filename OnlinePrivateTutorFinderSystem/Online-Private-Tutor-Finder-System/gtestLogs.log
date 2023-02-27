@@ -1,0 +1,533 @@
+2023-02-27 12:05:28,619 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Starting OnlinePrivateTutorFinderSystemApplication using Java 17.0.6 on LIN80030751 with PID 4696 (C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System\bin\main started by patmgg in C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System)
+2023-02-27 12:05:28,620 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-27 12:05:28,720 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-27 12:05:28,721 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-27 12:05:29,611 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 12:05:29,717 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 88 ms. Found 3 JPA repository interfaces.
+2023-02-27 12:05:30,740 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8088 (http)
+2023-02-27 12:05:30,759 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-02-27 12:05:30,760 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 12:05:30,894 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-02-27 12:05:30,895 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2173 ms
+2023-02-27 12:05:31,213 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-27 12:05:31,280 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-02-27 12:05:31,482 [INFO] org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-27 12:05:31,587 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-02-27 12:05:31,834 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-02-27 12:05:31,854 [INFO] org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-27 12:05:32,623 [WARN] org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl [restartedMain] GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table booking_requests 
+       drop constraint FK5smw898bt2nxmjnit2ed0h13g" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table booking_requests 
+       drop constraint FK5smw898bt2nxmjnit2ed0h13g" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:341)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:235)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.optfs.OnlinePrivateTutorFinderSystemApplication.main(OnlinePrivateTutorFinderSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.postgresql.util.PSQLException: ERROR: constraint "fk5smw898bt2nxmjnit2ed0h13g" of relation "booking_requests" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:286)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 40 common frames omitted
+2023-02-27 12:05:32,633 [WARN] org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl [restartedMain] GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table booking_requests 
+       drop constraint FKq64q4sby4o34fjar3s3ebep1t" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table booking_requests 
+       drop constraint FKq64q4sby4o34fjar3s3ebep1t" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:341)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:235)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128)
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.optfs.OnlinePrivateTutorFinderSystemApplication.main(OnlinePrivateTutorFinderSystemApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.postgresql.util.PSQLException: ERROR: constraint "fkq64q4sby4o34fjar3s3ebep1t" of relation "booking_requests" does not exist
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:286)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54)
+	... 40 common frames omitted
+2023-02-27 12:05:32,661 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-02-27 12:05:32,661 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] drop cascades to constraint fk893hsvrgujfbw8sht88141bt4 on table bookingrequests
+2023-02-27 12:05:32,671 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] SQL Warning Code: 0, SQLState: 00000
+2023-02-27 12:05:32,672 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] drop cascades to constraint fki6s09kqwdkhh9dps4xdhll86f on table bookingrequests
+2023-02-27 12:05:32,750 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-27 12:05:32,763 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 12:05:33,379 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-27 12:05:33,763 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-02-27 12:05:33,817 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8088 (http) with context path ''
+2023-02-27 12:05:33,845 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Started OnlinePrivateTutorFinderSystemApplication in 5.773 seconds (JVM running for 6.427)
+2023-02-27 12:06:27,293 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8088-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-27 12:06:27,293 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8088-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-02-27 12:06:27,301 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8088-exec-1] Completed initialization in 0 ms
+2023-02-27 12:09:47,150 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-27 12:09:47,164 [INFO] org.apache.catalina.core.StandardService [Thread-5] Stopping service [Tomcat]
+2023-02-27 12:09:47,166 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-5] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-27 12:09:47,173 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 12:09:47,177 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2023-02-27 12:09:47,189 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2023-02-27 12:09:47,283 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Starting OnlinePrivateTutorFinderSystemApplication using Java 17.0.6 on LIN80030751 with PID 4696 (C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System\bin\main started by patmgg in C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System)
+2023-02-27 12:09:47,283 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-27 12:09:47,506 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 12:09:47,539 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 32 ms. Found 3 JPA repository interfaces.
+2023-02-27 12:09:47,723 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8088 (http)
+2023-02-27 12:09:47,725 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-02-27 12:09:47,726 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 12:09:47,764 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-02-27 12:09:47,765 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 479 ms
+2023-02-27 12:09:47,817 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-27 12:09:47,828 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2023-02-27 12:09:47,928 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2023-02-27 12:09:47,929 [INFO] org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-27 12:09:48,042 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-27 12:09:48,043 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 12:09:48,238 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-27 12:09:48,360 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-02-27 12:09:48,378 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8088 (http) with context path ''
+2023-02-27 12:09:48,393 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Started OnlinePrivateTutorFinderSystemApplication in 1.149 seconds (JVM running for 260.976)
+2023-02-27 12:09:48,395 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-02-27 12:09:51,878 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-27 12:09:51,912 [INFO] org.apache.catalina.core.StandardService [Thread-7] Stopping service [Tomcat]
+2023-02-27 12:09:51,917 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 12:09:51,918 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2023-02-27 12:09:51,921 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2023-02-27 12:09:52,012 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Starting OnlinePrivateTutorFinderSystemApplication using Java 17.0.6 on LIN80030751 with PID 4696 (C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System\bin\main started by patmgg in C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System)
+2023-02-27 12:09:52,012 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-27 12:09:52,189 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 12:09:52,215 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2023-02-27 12:09:52,305 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8088 (http)
+2023-02-27 12:09:52,306 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-02-27 12:09:52,307 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 12:09:52,337 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-02-27 12:09:52,338 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 322 ms
+2023-02-27 12:09:52,373 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-27 12:09:52,380 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2023-02-27 12:09:52,570 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2023-02-27 12:09:52,571 [INFO] org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-27 12:09:52,704 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-27 12:09:52,705 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 12:09:52,866 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-27 12:09:52,978 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-02-27 12:09:52,991 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8088 (http) with context path ''
+2023-02-27 12:09:52,995 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Started OnlinePrivateTutorFinderSystemApplication in 1.014 seconds (JVM running for 265.578)
+2023-02-27 12:09:52,996 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-02-27 12:10:05,562 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8088-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-27 12:10:05,570 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8088-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-27 12:10:05,570 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8088-exec-2] Completed initialization in 0 ms
+2023-02-27 12:16:58,129 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-27 12:16:58,164 [INFO] org.apache.catalina.core.StandardService [Thread-11] Stopping service [Tomcat]
+2023-02-27 12:16:58,164 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-11] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-27 12:16:58,171 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-11] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 12:16:58,172 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-3 - Shutdown initiated...
+2023-02-27 12:16:58,184 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-11] HikariPool-3 - Shutdown completed.
+2023-02-27 12:16:58,266 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Starting OnlinePrivateTutorFinderSystemApplication using Java 17.0.6 on LIN80030751 with PID 4696 (C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System\bin\main started by patmgg in C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System)
+2023-02-27 12:16:58,267 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-27 12:16:58,472 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 12:16:58,499 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2023-02-27 12:16:58,583 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8088 (http)
+2023-02-27 12:16:58,585 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-02-27 12:16:58,585 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 12:16:58,613 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-02-27 12:16:58,613 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 343 ms
+2023-02-27 12:16:58,648 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-27 12:16:58,655 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2023-02-27 12:16:58,734 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2023-02-27 12:16:58,735 [INFO] org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-27 12:16:58,844 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-27 12:16:58,844 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 12:16:58,964 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-27 12:16:59,046 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-02-27 12:16:59,059 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8088 (http) with context path ''
+2023-02-27 12:16:59,063 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Started OnlinePrivateTutorFinderSystemApplication in 0.831 seconds (JVM running for 691.644)
+2023-02-27 12:16:59,065 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-02-27 12:17:13,617 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8088-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-27 12:17:13,618 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8088-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-27 12:17:13,620 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8088-exec-2] Completed initialization in 1 ms
+2023-02-27 12:17:13,653 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8088-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.optfs.exceptions.NullValuesFoundException: Can't send Booking Request with null values] with root cause
+com.optfs.exceptions.NullValuesFoundException: Can't send Booking Request with null values
+	at com.optfs.services.BookingRequestsServiceImpl.sendBookingRequest(BookingRequestsServiceImpl.java:30) ~[main/:na]
+	at com.optfs.controller.BookingRequestsController.sendBookingRequest(BookingRequestsController.java:44) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+2023-02-27 12:18:35,862 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8088-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.optfs.exceptions.NullValuesFoundException: Can't send Booking Request with null values] with root cause
+com.optfs.exceptions.NullValuesFoundException: Can't send Booking Request with null values
+	at com.optfs.services.BookingRequestsServiceImpl.sendBookingRequest(BookingRequestsServiceImpl.java:30) ~[main/:na]
+	at com.optfs.controller.BookingRequestsController.sendBookingRequest(BookingRequestsController.java:44) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+2023-02-27 12:25:33,264 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8088-exec-10] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.optfs.exceptions.NullValuesFoundException: Can't send Booking Request with null values] with root cause
+com.optfs.exceptions.NullValuesFoundException: Can't send Booking Request with null values
+	at com.optfs.services.BookingRequestsServiceImpl.sendBookingRequest(BookingRequestsServiceImpl.java:30) ~[main/:na]
+	at com.optfs.controller.BookingRequestsController.sendBookingRequest(BookingRequestsController.java:44) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.25.jar:5.3.25]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.71.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.25.jar:5.3.25]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.71.jar:9.0.71]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+2023-02-27 12:25:49,593 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Starting OnlinePrivateTutorFinderSystemApplication using Java 17.0.6 on LIN80030751 with PID 4060 (C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System\bin\main started by patmgg in C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System)
+2023-02-27 12:25:49,594 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-27 12:25:49,670 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-27 12:25:49,673 [INFO] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-27 12:25:50,525 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 12:25:50,622 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 82 ms. Found 3 JPA repository interfaces.
+2023-02-27 12:25:51,597 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8088 (http)
+2023-02-27 12:25:51,611 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-02-27 12:25:51,612 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 12:25:51,719 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-02-27 12:25:51,720 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2046 ms
+2023-02-27 12:25:51,984 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-27 12:25:52,037 [INFO] org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-02-27 12:25:52,209 [INFO] org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-27 12:25:52,324 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-02-27 12:25:52,552 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-02-27 12:25:52,569 [INFO] org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-27 12:25:53,455 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-27 12:25:53,469 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 12:25:54,270 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-27 12:25:54,763 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-02-27 12:25:54,836 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8088 (http) with context path ''
+2023-02-27 12:25:54,853 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Started OnlinePrivateTutorFinderSystemApplication in 5.748 seconds (JVM running for 6.389)
+2023-02-27 12:26:02,944 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8088-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-27 12:26:02,945 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8088-exec-3] Initializing Servlet 'dispatcherServlet'
+2023-02-27 12:26:02,947 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8088-exec-3] Completed initialization in 2 ms
+2023-02-27 12:26:03,038 [ERROR] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8088-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.optfs.exceptions.NullValuesFoundException: Can't send Booking Request with null values] with root cause
+com.optfs.exceptions.NullValuesFoundException: Can't send Booking Request with null values
+	at com.optfs.services.BookingRequestsServiceImpl.sendBookingRequest(BookingRequestsServiceImpl.java:30)
+	at com.optfs.controller.BookingRequestsController.sendBookingRequest(BookingRequestsController.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-02-27 12:33:39,861 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-27 12:33:39,900 [INFO] org.apache.catalina.core.StandardService [Thread-5] Stopping service [Tomcat]
+2023-02-27 12:33:39,902 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-5] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-27 12:33:39,909 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 12:33:39,915 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2023-02-27 12:33:39,919 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2023-02-27 12:33:39,996 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Starting OnlinePrivateTutorFinderSystemApplication using Java 17.0.6 on LIN80030751 with PID 4060 (C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System\bin\main started by patmgg in C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System)
+2023-02-27 12:33:39,997 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-27 12:33:40,250 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 12:33:40,286 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 34 ms. Found 3 JPA repository interfaces.
+2023-02-27 12:33:40,380 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8088 (http)
+2023-02-27 12:33:40,382 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-02-27 12:33:40,382 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 12:33:40,408 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-02-27 12:33:40,408 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 409 ms
+2023-02-27 12:33:40,453 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-27 12:33:40,459 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2023-02-27 12:33:40,639 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2023-02-27 12:33:40,640 [INFO] org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-27 12:33:40,787 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-27 12:33:40,788 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 12:33:40,964 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-27 12:33:41,084 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-02-27 12:33:41,097 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8088 (http) with context path ''
+2023-02-27 12:33:41,102 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Started OnlinePrivateTutorFinderSystemApplication in 1.141 seconds (JVM running for 472.634)
+2023-02-27 12:33:41,105 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2023-02-27 12:33:47,913 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8088-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-27 12:33:47,913 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8088-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-02-27 12:33:47,913 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8088-exec-2] Completed initialization in 0 ms
+2023-02-27 14:30:41,635 [WARN] com.zaxxer.hikari.pool.HikariPool [HikariPool-2 housekeeper] HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=38m7s387ms778µs300ns).
+2023-02-27 14:35:45,550 [INFO] org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-02-27 14:35:45,570 [INFO] org.apache.catalina.core.StandardService [Thread-7] Stopping service [Tomcat]
+2023-02-27 14:35:45,571 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [Thread-7] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-27 14:35:45,584 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 14:35:45,588 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2023-02-27 14:35:45,594 [INFO] com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2023-02-27 14:35:45,733 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Starting OnlinePrivateTutorFinderSystemApplication using Java 17.0.6 on LIN80030751 with PID 4060 (C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System\bin\main started by patmgg in C:\Users\patmgg\Documents\workspace-spring-tool-suite-4-4.17.2.RELEASE\OnlinePrivateTutorFinderSystem\Online-Private-Tutor-Finder-System)
+2023-02-27 14:35:45,735 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-02-27 14:35:45,902 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-27 14:35:45,923 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 20 ms. Found 3 JPA repository interfaces.
+2023-02-27 14:35:46,016 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8088 (http)
+2023-02-27 14:35:46,018 [INFO] org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-02-27 14:35:46,018 [INFO] org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-27 14:35:46,043 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-02-27 14:35:46,043 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 304 ms
+2023-02-27 14:35:46,090 [INFO] org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-27 14:35:46,102 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2023-02-27 14:35:46,172 [INFO] com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2023-02-27 14:35:46,173 [INFO] org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-27 14:35:46,257 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-27 14:35:46,257 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-27 14:35:46,409 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-27 14:35:46,523 [INFO] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-02-27 14:35:46,535 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8088 (http) with context path ''
+2023-02-27 14:35:46,539 [INFO] com.optfs.OnlinePrivateTutorFinderSystemApplication [restartedMain] Started OnlinePrivateTutorFinderSystemApplication in 0.852 seconds (JVM running for 7805.942)
+2023-02-27 14:35:46,541 [INFO] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
